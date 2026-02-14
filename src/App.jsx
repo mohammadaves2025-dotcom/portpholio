@@ -11,17 +11,22 @@ import { Toaster } from 'react-hot-toast'
 
 const App = () => {
   return (
-    <div className='min-h-screen w-full bg-zinc-950'>
+    <div className='min-h-screen w-full bg-zinc-950 overflow-x-hidden'>
       <Toaster />
       <Navbar />
-      <Hero />
-      <Details />
-      <Myservices />
-      <Work />
-      <Touch />
-      <Footer />
+      
+      {/* Main Content Wrapper */}
+      <div className='pt-24'>
+        <Hero />
+        <Details />
+        <Myservices />
+        <Work />
+        <Touch />
+        <Footer />
+      </div>
+      
     </div>
   )
 }
 
-export default App
+export default App;

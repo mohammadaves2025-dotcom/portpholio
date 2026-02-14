@@ -21,7 +21,7 @@ const Touch = () => {
 
       if (data.success) {
         setResult("Message sent successfully!");
-       toast.success("Message sent successfully")
+        toast.success("Message sent successfully")
         form.reset();
       } else {
         setResult("Failed to send message.");
@@ -34,29 +34,31 @@ const Touch = () => {
   };
 
   return (
-    <section id="touch" className="bg-zinc-950 text-white w-full py-20 px-6">
+    <section id="touch" className="bg-zinc-950 text-white w-full py-16 sm:py-20 px-4 sm:px-6 md:px-12">
+
       {/* Heading */}
-      <h1 className="text-5xl md:text-6xl font-bold text-center">
-        Get in{" "}
-        <span className="text-green-500">Touch</span>
+      <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-center">
+        Get in <span className="text-green-500">Touch</span>
       </h1>
 
-      <div className="mt-16 flex flex-col lg:flex-row gap-16 max-w-6xl mx-auto">
+      <div className="mt-12 sm:mt-16 flex flex-col lg:flex-row gap-12 lg:gap-16 max-w-6xl mx-auto">
+
         {/* Contact Info */}
         <div className="lg:w-1/2">
-          <h2 className="text-4xl md:text-5xl font-extrabold">
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-extrabold">
             <span className="text-white">Let's</span>{" "}
             <span className="text-green-500">Talk</span>
           </h2>
-          <p className="mt-6 text-zinc-300 leading-relaxed">
+
+          <p className="mt-6 text-zinc-300 leading-relaxed text-sm sm:text-base md:text-lg">
             I'm currently available for new projects. Feel free to send me a
             message about anything you'd like me to work on. You can contact me
             anytime via email, phone, or location info below.
           </p>
 
-          <div className="mt-10 flex flex-col gap-4 text-zinc-300">
+          <div className="mt-8 flex flex-col gap-4 text-zinc-300 text-sm sm:text-base">
             <p className="flex items-center gap-3">
-              📧 <span>mohammadaves2025@gmail.com</span>
+              📧 <span className="break-all">mohammadaves2025@gmail.com</span>
             </p>
             <p className="flex items-center gap-3">
               📞 <span>+91-9770448008</span>
@@ -73,7 +75,10 @@ const Touch = () => {
             onSubmit={onSubmit}
             className="flex flex-col gap-4 w-full"
           >
-            <label className="text-lg font-semibold">Your Name</label>
+            <label className="text-base sm:text-lg font-semibold">
+              Your Name
+            </label>
+
             <input
               type="text"
               name="name"
@@ -82,7 +87,10 @@ const Touch = () => {
               required
             />
 
-            <label className="text-lg font-semibold mt-4">Your Email</label>
+            <label className="text-base sm:text-lg font-semibold mt-4">
+              Your Email
+            </label>
+
             <input
               type="email"
               name="email"
@@ -91,10 +99,13 @@ const Touch = () => {
               required
             />
 
-            <label className="text-lg font-semibold mt-4">Message</label>
+            <label className="text-base sm:text-lg font-semibold mt-4">
+              Message
+            </label>
+
             <textarea
               name="message"
-              rows="6"
+              rows="5"
               placeholder="Enter Your Message Here"
               className="w-full p-3 rounded-lg bg-zinc-800 placeholder-zinc-500 focus:outline-none focus:ring-2 focus:ring-green-500 transition resize-none"
               required
@@ -103,22 +114,30 @@ const Touch = () => {
             <button
               type="submit"
               className="
-                relative mt-6 px-14 py-4 rounded-full
-                font-semibold text-white text-lg
-                bg-gradient-to-r from-emerald-400 via-green-500 to-teal-500
-                shadow-lg shadow-emerald-500/30
-                hover:shadow-emerald-500/60
-                hover:scale-105 active:scale-95
-                transition-all duration-300
-              "
+              mt-6 
+              px-8 sm:px-12 
+              py-3 sm:py-4 
+              rounded-full
+              font-semibold 
+              text-white 
+              text-sm sm:text-lg
+              bg-gradient-to-r from-emerald-400 via-green-500 to-teal-500
+              shadow-lg shadow-emerald-500/30
+              hover:shadow-emerald-500/60
+              hover:scale-105 active:scale-95
+              transition-all duration-300
+              w-full sm:w-auto
+            "
             >
               Submit Now
             </button>
           </form>
         </div>
+
       </div>
     </section>
   );
+
 };
 
 export default Touch;
