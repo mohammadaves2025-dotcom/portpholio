@@ -8,21 +8,29 @@ import Touch from './Components/Touch/Touch.jsx'
 import Footer from './Components/Footer/Footer.jsx'
 import { Toaster } from 'react-hot-toast'
 
-
 const App = () => {
   return (
-    <div className='min-h-screen w-full bg-zinc-950 overflow-x-hidden'>
-      <Toaster />
-      <Navbar />
+    <div className='relative min-h-screen w-full bg-zinc-950 text-zinc-100 selection:bg-emerald-500/30 selection:text-emerald-400 overflow-x-hidden'>
       
-      {/* Main Content Wrapper */}
-      <div className='pt-24'>
-        <Hero />
-        <Details />
-        <Myservices />
-        <Work />
-        <Touch />
-        <Footer />
+      {/* Background Ambient Glow - The "God Level" Touch */}
+      <div className="fixed top-0 left-0 w-full h-full pointer-events-none z-0">
+        <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] rounded-full bg-emerald-500/5 blur-[120px]" />
+        <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] rounded-full bg-purple-500/5 blur-[120px]" />
+      </div>
+
+      <Toaster position="bottom-right" reverseOrder={false} />
+      
+      <div className="relative z-10">
+        <Navbar />
+        
+        <main className='pt-20 lg:pt-24'>
+          <Hero />
+          <Details />
+          <Myservices />
+          <Work />
+          <Touch />
+          <Footer />
+        </main>
       </div>
       
     </div>
