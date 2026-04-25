@@ -1,52 +1,53 @@
 import React from 'react';
 import { HiOutlineExternalLink, HiOutlineCode } from "react-icons/hi";
+import { assets } from '../../assets/assets.js';
 
 const projects = [
   {
-    title: "Hostel Management System",
+    title: "JCS Consultancy Website",
     category: "Full Stack / MERN",
     tags: ["React", "Node.js", "MongoDB", "Tailwind"],
-    img: "https://greatstack.in/portfolio/assets/project_1-5xYOfh0z.svg",
-    link: "https://hostel-management-thyn.vercel.app/",
-    github: "https://github.com/mohammadaves2025-dotcom/Hostel_Management"
+    img: assets.jcs,
+    link: "https://www.jamiaconsultancyservices.in/",
+    github: "https://github.com/mohammadaves2025-dotcom/JCS_FullStack"
   },
   {
     title: "Cricket DRS System",
     category: "Computer Vision / Python",
     tags: ["Python", "OpenCV", "Tkinter"],
-    img: "https://greatstack.in/portfolio/assets/project_2-ko3fLZz-.svg",
+    img: assets.drs,
     link: "https://github.com/mohammadaves2025-dotcom/DRS-zenith",
     github: "https://github.com/mohammadaves2025-dotcom/DRS-zenith"
-  },
-  {
-    title: "AI-Powered Code Assistant",
-    category: "Machine Learning / Web",
-    tags: ["MERN", "Scikit-Learn", "Flask","Gemini API"],
-    img: "https://greatstack.in/portfolio/assets/project_3-G9x9U39U.svg",
-    link: "https://quickgpt-sandy.vercel.app/",
-    github: "https://github.com/mohammadaves2025-dotcom/QuickGPT"
   },
   {
     title: "Hostel Management System",
     category: "Full Stack / MERN",
     tags: ["React", "Node.js", "MongoDB", "Tailwind"],
-    img: "https://greatstack.in/portfolio/assets/project_1-5xYOfh0z.svg",
+    img: assets.hostel,
     link: "https://hostel-management-thyn.vercel.app/",
     github: "https://github.com/mohammadaves2025-dotcom/Hostel_Management"
   },
   {
-    title: "Cricket DRS System",
-    category: "Computer Vision / Python",
-    tags: ["Python", "OpenCV", "Tkinter"],
-    img: "https://greatstack.in/portfolio/assets/project_2-ko3fLZz-.svg",
-    link: "https://github.com/mohammadaves2025-dotcom/DRS-zenith",
-    github: "https://github.com/mohammadaves2025-dotcom/DRS-zenith"
+    title: "Fraud Detection System",
+    category: "Full Stack / MERN",
+    tags: ["React", "Node.js", "TIgerGraph", "Tailwind"],
+    img: assets.sentinel,
+    link: "https://sentinel-graph-szgt.vercel.app/",
+    github: "https://github.com/mohammadaves2025-dotcom/SentinelGraph"
+  },
+  {
+    title: "VoltIq - AI-Powered Electricity Consumption Checker",
+    category: "Machine Learning / Python",
+    tags: ["Python", "FastAPI", "MERN"],
+    img: assets.volt,
+    link: "https://volt-iq-eo6n.vercel.app/",
+    github: "https://github.com/mohammadaves2025-dotcom/VoltIQ"
   },
   {
     title: "AI-Powered Code Assistant",
     category: "Machine Learning / Web",
     tags: ["MERN", "Scikit-Learn", "Flask","Gemini API"],
-    img: "https://greatstack.in/portfolio/assets/project_3-G9x9U39U.svg",
+    img: assets.gpt,
     link: "https://quickgpt-sandy.vercel.app/",
     github: "https://github.com/mohammadaves2025-dotcom/QuickGPT"
   },

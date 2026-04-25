@@ -36,8 +36,8 @@ const Hero = () => {
 
       {/* Description */}
       <p className="mt-8 text-zinc-400 max-w-2xl text-base sm:text-lg md:text-xl leading-relaxed font-medium">
-        Specializing in the <span className="text-zinc-100 font-semibold text-emerald-400">MERN Stack</span> and 
-        integrating <span className="text-zinc-100 font-semibold text-purple-400 italic">Generative AI</span> to 
+        Specializing in the <span className="text-zinc-100 font-semibold text-emerald-400">MERN Stack</span> and
+        integrating <span className="text-zinc-100 font-semibold text-purple-400 italic">Generative AI</span> to
         build the next generation of intelligent web systems.
       </p>
 
@@ -50,16 +50,19 @@ const Hero = () => {
           className="group relative px-8 py-4 bg-white text-black font-bold rounded-full overflow-hidden transition-all duration-300 hover:scale-105 active:scale-95"
         >
           <span className="relative z-10 flex items-center gap-2">
-             My Github
+            My Github
           </span>
           <div className="absolute inset-0 bg-emerald-400 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300"></div>
         </a>
 
-        <button
-          className="px-8 py-4 bg-zinc-900 border border-zinc-800 text-white font-bold rounded-full transition-all duration-300 hover:bg-zinc-800 hover:border-zinc-700 hover:scale-105 active:scale-95"
+        <a
+          href="https://drive.google.com/file/d/1CrfIP4ZguQA_gJP7Uqs_5jNUJJPGrKxp/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block px-8 py-4 bg-zinc-900 border border-zinc-800 text-white font-bold rounded-full transition-all duration-300 hover:bg-zinc-800 hover:border-zinc-700 hover:scale-105 active:scale-95 text-center"
         >
           My Resume
-        </button>
+        </a>
       </div>
 
       {/* Scroll Indicator */}
