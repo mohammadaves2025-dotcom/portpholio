@@ -16,7 +16,8 @@ const Navbar = () => {
     const navLinks = [
         { name: "Home", href: "#home" },
         { name: "About Me", href: "#details" },
-        { name: "Services", href: "#work" }, // Note: check if this should be #services based on your App.js
+        { name: "Services", href: "#work" },
+        { name: "Clients", href: "#clients" },
         { name: "Contact", href: "#touch" },
     ];
 

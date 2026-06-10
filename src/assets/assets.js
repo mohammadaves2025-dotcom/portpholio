@@ -6,6 +6,9 @@ import hostel from "./hostel.bmp";
 import sentinel from "./sentinel.bmp";
 import sypmtom from "./sypmtom.bmp";
 import volt from "./volt.bmp";
+import ttsoln from "./ttsoln.bmp";
+import orbis1 from "./orbis1.bmp";
+import orbis2 from "./orbis2.bmp";
 
 
 export const assets = {
@@ -16,5 +19,8 @@ export const assets = {
   sentinel,
   gpt,
   sypmtom,
-  volt
+  volt,
+  ttsoln,
+  orbis1,
+  orbis2,
 };

@@ -12,6 +12,14 @@ const projects = [
     github: "https://github.com/mohammadaves2025-dotcom/JCS_FullStack"
   },
   {
+    title: "The Orbis Journal Website",
+    category: "Full Stack / MERN",
+    tags: ["React", "Node.js", "MongoDB", "Tailwind"],
+    img: assets.orbis2,
+    link: "https://the-asr-1m9a.vercel.app/",
+    github: "https://github.com/mohammadaves2025-dotcom/The_Asr"
+  },
+  {
     title: "Cricket DRS System",
     category: "Computer Vision / Python",
     tags: ["Python", "OpenCV", "Tkinter"],
@@ -26,6 +34,14 @@ const projects = [
     img: assets.hostel,
     link: "https://hostel-management-thyn.vercel.app/",
     github: "https://github.com/mohammadaves2025-dotcom/Hostel_Management"
+  },
+  {
+    title: "T&T Office Solution Website",
+    category: "Full Stack / MERN",
+    tags: ["React", "Node.js", "MongoDB", "Tailwind"],
+    img: assets.ttsoln,
+    link: "https://www.ttofficesolutions.in/",
+    github: "https://github.com/mohammadaves2025-dotcom/ttSolutions"
   },
   {
     title: "Fraud Detection System",
